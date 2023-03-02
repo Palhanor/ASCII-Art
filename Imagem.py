@@ -13,8 +13,3 @@ class AsciiImagem(AsciiGerador):
     def exibir_imagem(self):
         largura_maxima = 260
         self._desenhar_tela(self.imagem, largura_maxima)
-        exibir_original = False
-        if exibir_original:
-            cv2.imshow("Imagem", self.imagem)
-            cv2.waitKey(0)
-            cv2.destroyAllWindows()
